@@ -1,0 +1,106 @@
+.header {
+  padding-top: 85px;
+  padding-bottom: 492px;
+}
+.menu {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.045em;
+  }
+
+  &__list-item+
+  &__list-item {
+    margin-left: 70px;
+  }
+  &__list-link {
+    color: rgba(14, 7, 1, 0.7);
+  }
+}
+.logo {
+  font-family: 'Amatic SC', cursive;
+  color: #8E7561;
+  letter-spacing: 0.175em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-shadow:0px 1px 0 rgba(14, 7, 1, 0.7),0px -1px 0 rgba(14, 7, 1, 0.7),1px 0px 0 rgba(14, 7, 1, 0.7),-1px 0px 0 rgba(14, 7, 1, 0.7),1px 1px 0 rgba(14, 7, 1, 0.7),1px -1px 0 rgba(14, 7, 1, 0.7),-1px 1px 0 rgba(14, 7, 1, 0.7),-1px -1px 0 rgba(14, 7, 1, 0.7);
+}
+.subheader {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1920px;
+    height: 1156px;
+    background: url(../images/im.png) center center/contain no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -90px;
+    z-index: -1;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 29px;
+    color: #0E0701;
+  }
+
+  &__quote {
+    margin-top: 371px;
+    width: 305px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 29px;
+    letter-spacing: 1.3px;
+    color: #0E0701;
+    position: relative;
+    &::before,
+    &::after {
+      content: '“';
+      position: absolute;
+      font-family: 'Neucha';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 63px;
+      line-height: 44px;
+      color: #8E7561;
+      top: -12px;
+      left: -25px;
+    }
+    &::after {
+      content: '”';
+      left: auto;
+      top: auto;
+      bottom: -58px;
+      right: -8px;
+    }
+  }
+}
+.button {
+  display: block;
+  width: 246px;
+  height: 63px;
+  background: #8E7561;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 63px;
+  letter-spacing: 1.3px;
+  color: #FFF8F0;
+  text-align: center;
+  margin-top: 31px;
+}
+
