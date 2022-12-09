@@ -1,0 +1,10 @@
+.tariffs {
+  padding: 40px 0 105px;
+  &__wrapper {
+    margin-top: 45px;
+    display: flex;
+    max-width: 970px;
+    justify-content: space-between;
+    margin-left: 100px;
+  }
+}

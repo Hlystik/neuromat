@@ -1,0 +1,11 @@
+.services {
+  padding: 53px 0 80px;
+  &__tarrifs {
+    max-width: 1440px;
+    padding: 0 65px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+  }
+}

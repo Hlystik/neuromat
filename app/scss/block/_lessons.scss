@@ -1,0 +1,63 @@
+.lessons {
+padding: 80px 0 30px;
+  &__wrapper {
+    display: flex;
+  }
+
+  &__item {
+    max-width: 560px;
+    padding: 0px 15px;
+    &:last-child {
+      margin-left: 42px;
+      margin-top: 120px;
+    }
+  }
+
+  &__item-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__item-text {
+    font-size: 23px;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    color: rgba(14, 7, 1, 0.7);
+  }
+
+  &__list {
+    margin-top: 45px;
+    list-style-type: none;
+    counter-reset: my-counter;
+  }
+
+  &__list-item {
+    padding: 0 40px 0 90px;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 1.3px;
+    color: #0E0701;
+    margin-top: 25px;
+    position: relative;
+    &::before {
+      content: counter(my-counter);
+      position: absolute;
+      counter-increment: my-counter;
+      font-family: 'Neucha', sans-serif;
+      color: #8E7561;
+      font-size: 26px;
+      left: 60px;
+      top: 5px;
+    }
+  }
+
+  &__list-text {
+  }
+}
+.container {
+}
+.title {
+
+  &_lessons {
+  }
+}

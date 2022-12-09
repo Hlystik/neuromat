@@ -1,0 +1,100 @@
+/* .acc {
+
+  &__item {
+    background: url(../images/acc.jpg) center center/contain;
+    border: 2px solid #8E7561;
+    border-radius: 20px;
+    padding: 20px 60px;
+  }
+
+  &__head {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+  }
+
+  &__body {
+    font-size: 23px;
+    line-height: 29px;
+    letter-spacing: .5px;
+    color: #34343F;
+    margin-top: 50px;
+  }
+}
+ */
+
+ul.accordion-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  
+  li {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: url(../images/acc.jpg) center center/contain;
+    padding: 20px 60px;
+    border-radius: 20px;
+    margin: 0 auto 40px auto;
+    border: 2px solid #8E7561;
+    cursor: pointer;
+    &.active {
+        background: none;
+      h3 {
+        color: #000000;
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+    
+    h3 {
+      font-weight: 700;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 0 0 0 0;
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      color: #FFFFFF;
+      transition: all .3s;
+      &:after {
+        content: "\f278";
+        font-family: "material-design-iconic-font";
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #Fcc110;
+        transition: all 0.3s ease-in-out;
+        font-size: 18px;
+      }
+    }
+    div.answer {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      
+      p {
+        position: relative;
+        display: block;
+        font-weight: 300;
+        padding: 10px 0 0 0;
+        cursor: pointer;
+        line-height: 150%;
+        margin: 0 0 15px 0;
+        font-size: 14px;
+      }
+    }
+  }
+}

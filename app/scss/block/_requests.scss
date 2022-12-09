@@ -1,0 +1,32 @@
+.requests {
+
+  &__wrapper {
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-between;
+  }
+
+  &__list {
+    margin-top: 45px;
+  }
+  &__list-item {
+    margin-bottom: 32px;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 1.3px;
+    color: #0E0701;
+    position: relative;
+    padding-left: 46px;
+    margin-left: 50px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      background: url(../images/arrow.png);
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

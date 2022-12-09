@@ -1,10 +1,31 @@
 .title {
-	font-family: 'Amatic SC';
-	font-style: normal;
+	font-family: 'Neucha', sans-serif;
 	font-weight: 400;
-	font-size: 73px;
-	line-height: 117.66%;
-	letter-spacing: 11.5px;
-	color: #311D0D;
-	margin-top: 292px;
+  color: #8E7561;
+	font-size: 60px;
+  line-height: 66px;
+	letter-spacing: 2px;
+  &_product-item {
+    font-size: 64px;
+    line-height: 115.66%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0E0701;
+  }
+  &_lessons,
+  &_requests {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000000;
+    margin-top: 95px;
+  }
+  &_card {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 2px;
+    color: #0E0701;
+    //text-align: center;
+  }
 }
