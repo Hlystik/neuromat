@@ -29,13 +29,7 @@
   }
 }
 .logo {
-  font-family: 'Amatic SC', cursive;
-  color: #8E7561;
-  letter-spacing: 0.175em;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  text-shadow:0px 1px 0 rgba(14, 7, 1, 0.7),0px -1px 0 rgba(14, 7, 1, 0.7),1px 0px 0 rgba(14, 7, 1, 0.7),-1px 0px 0 rgba(14, 7, 1, 0.7),1px 1px 0 rgba(14, 7, 1, 0.7),1px -1px 0 rgba(14, 7, 1, 0.7),-1px 1px 0 rgba(14, 7, 1, 0.7),-1px -1px 0 rgba(14, 7, 1, 0.7);
+  margin-right: auto;
   margin-left: -40px;
 }
 .subheader {
@@ -48,17 +42,6 @@
     transform: translateX(-50%);
     z-index: -2;
   }
-  /* &::before {
-    content: '';
-    position: absolute;
-    width: 1920px;
-    height: 1156px;
-    background: url(../images/im.png) center center/contain no-repeat;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -90px;
-    z-index: -1;
-  } */
   &__wrapper {
     display: flex;
     justify-content: space-between;

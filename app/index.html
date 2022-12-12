@@ -23,6 +23,11 @@
               <li class="menu__list-item"><a class="menu__list-link" href="#">Вопросы</a></li>
               <li class="menu__list-item"><a class="menu__list-link" href="#">Отзывы</a></li>
             </ul>
+            <a class="menu__hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
           </div>
         </div>
       </nav>
@@ -37,7 +42,7 @@
               <h2 class="subheader__subtitle">
                 Нейропсихолог. Логопед
               </h2>
-              <a class="button" href="">
+              <a class="button button_subheader" href="">
                 Выбрать курс
               </a>
             </div>
@@ -51,7 +56,6 @@
     <div class="wrapper">
       <main class="main">
         <section class="about">
-          
           <div class="container">
             <h2 class="title title_about">
               Знакомство со мной
@@ -148,6 +152,12 @@
                 выбери подходящий для себя
               </h3>
             </div>
+            <h3 class="product__item-overhead display-none">
+              Онлайн-курс по агрессии
+            </h3>
+            <h2 class="title title_product-item display-none">
+              Осторожно! Дома&nbspпоселился дракон
+            </h2>
             <div class="product__wrapper">
               <div class="product__item">
                 <h3 class="product__item-overhead">
@@ -257,59 +267,62 @@
             </h2>
             <div class="tariffs__wrapper">
               <div class="card">
-                <h3 class="title title_card">
-                  Без обратной связи
-                </h3>
-                <p class="card__price">
-                  5000 <span class="card__price-ruble">₽</span>
-                </p>
-                <p class="card__term">
-                  / 4 недели
-                </p>
-                <ul class="card__list">
-                  <li class="card__list-item">
-                    Видео лекции
-                  </li>
-                  <li class="card__list-item">
-                    Рабочая тетрадь
-                  </li>
-                  <li class="card__list-item">
-                    Конспект
-                  </li>
-                  <li class="card__list-item">
-                    Войсы
-                  </li>
-                  
-                </ul>
+                <div class="card__info">
+                  <h3 class="title title_card">
+                    Без обратной связи
+                  </h3>
+                  <p class="card__price">
+                    5000 <span class="card__price-ruble">₽</span>
+                  </p>
+                  <p class="card__term">
+                    / 4 недели
+                  </p>
+                  <ul class="card__list">
+                    <li class="card__list-item">
+                      Видео лекции
+                    </li>
+                    <li class="card__list-item">
+                      Рабочая тетрадь
+                    </li>
+                    <li class="card__list-item">
+                      Конспект
+                    </li>
+                    <li class="card__list-item">
+                      Войсы
+                    </li>
+                  </ul>
+                </div>
                 <a class="button button_card" href="">Купить курс</a>
               </div>
               <div class="card">
-                <h3 class="title title_card">
-                  С обратной связью
-                </h3>
-                <p class="card__price">
-                  8500 <span class="card__price-ruble">₽</span>
-                </p>
-                <p class="card__term">
-                  / 4 недели
-                </p>
-                <ul class="card__list">
-                  <li class="card__list-item">
-                    Чат с обратной связью от меня
-                  </li>
-                  <li class="card__list-item">
-                    Видео лекции
-                  </li>
-                  <li class="card__list-item">
-                    Рабочая тетрадь
-                  </li>
-                  <li class="card__list-item">
-                    Конспект
-                  </li>
-                  <li class="card__list-item">
-                    Войсы
-                  </li>
-                </ul>
+                <div class="card__info">
+                  <h3 class="title title_card">
+                    С обратной связью
+                  </h3>
+                  <p class="card__price">
+                    8500 <span class="card__price-ruble">₽</span>
+                  </p>
+                  <p class="card__term">
+                    / 4 недели
+                  </p>
+                  <ul class="card__list">
+                    <li class="card__list-item">
+                      Чат с обратной связью от меня
+                    </li>
+                    <li class="card__list-item">
+                      Видео лекции
+                    </li>
+                    <li class="card__list-item">
+                      Рабочая тетрадь
+                    </li>
+                    <li class="card__list-item">
+                      Конспект
+                    </li>
+                    <li class="card__list-item">
+                      Войсы
+                    </li>
+                  </ul>
+                </div>
                 <a class="button button_card" href="">Купить курс</a>
               </div>
             </div>
@@ -406,6 +419,9 @@
           </div>
           <div class="services__tarrifs">
             <div class="card">
+              <div class="card__info">
+                  
+              </div>
               <h3 class="title title_card">
                 Диагностика<br><br>
               </h3>
@@ -429,6 +445,9 @@
               <a class="button button_card" href="">Купить курс</a>
             </div>
             <div class="card">
+              <div class="card__info">
+                  
+              </div>
               <h3 class="title title_card">
                 Удалённое сопровождение
               </h3>
@@ -455,6 +474,9 @@
               <a class="button button_card" href="">Купить курс</a>
             </div>
             <div class="card">
+              <div class="card__info">
+                  
+              </div>
               <h3 class="title title_card">
                 Онлайн консультация
               </h3>
@@ -487,91 +509,48 @@
             <h3 class="questions__subtitle">
               здесь ты найдёшь ответы
             </h3>
-            <!-- <div class="acc" id="accordeon">
-              <div class="acc__item">
-                <div class="acc__head">
-                  Как будет проводится марафон?
-                </div>
-                <div class="acc__body">
-                  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.
-                </div>
-              </div>
-              <div class="acc__item">
-                <div class="acc__head">
-                  Как будет проводится марафон?
-                </div>
-                <div class="acc__body">
-                  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.
-                </div>
-              </div>
-              <div class="acc__item">
-                <div class="acc__head">
-                  Как будет проводится марафон?
-                </div>
-                <div class="acc__body">
-                  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.
-                </div>
-              </div>
-              <div class="acc__item">
-                <div class="acc__head">
-                  Как будет проводится марафон?
-                </div>
-                <div class="acc__body">
-                  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.
-                </div>
-              </div>
-            </div> -->
             <ul class="accordion-list">
               <li>
-                <h3>How much does a website cost?</h3>
+                <h3>Как будет проводится марафон?</h3>
                 <div class="answer">
-                  <p>While we would love to be able to give a definitive, fixed price for a website, it really depends on the specific needs for each individual business. If one business needs a website comprised of five pages, while another has a substantially larger site of over 100 pages - obviously those projects are going to command different price points.</p>
-                  
-                  <p>With that being said - here are some general guidelines on what to expect from a pricing standpoint.</p>
-                  
-                  <p>If you can get by with a small website (between 3 - 10 pages) using a pre-designed template, you can expect to pay approximately $2,500.00. A mid-sized website that has anywhere from 11 - 25 pages, but still uses a pre-made template, will be between $3,000.00 - $5,000.00. If you have a lot of pages, are looking for something completely custom, or are looking for something that has special functionality such as eCommerce, custom calculators, or integrations with other services, you may be looking at anywhere from $10,000 - $20,000.</p>
-                  
-                  <p>Ultimately, the takeaway here is that we can accommodate projects of just about any budget - so long as expectations are set accordingly.</p> 
-                    
+                  <p>Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами. Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.</p>
                 </div>
               </li>
               <li>
-                <h3>Are there any monthly fees?</h3>
-                <div class="answer"><p>This will vary depending on the type of project. For logo & branding projects, fees will be one-time costs. For website projects, we will typically charge a monthly fee, depending on the level of service you choose. To view a full list of our monthly packages, click here.</p></div>
+                <h3>Как будет проводится марафон?</h3>
+                <div class="answer"><p>Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами. Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.</p></div>
               </li>
               <li>
-                <h3>How much does a logo cost?</h3>
+                <h3>Как будет проводится марафон?</h3>
                 <div class="answer">
-                  <p>Logo projects typically cost between $3,000 - $5000.</p>
-                  <p>"Why so much?" many people ask. To answer simply - because they require a lot of work. At least, to do them properly. And of all of the investments that you will make for your business, your logo & branding is one area where you don't want to skimp.</p>
-                  
-                  <p>In business, image is everything. And while your overall brand is based on far more than just your logo, a bad logo can create a strong first impression (for better or for worse).</p>
-                  
-                  <p>A properly designed logo requires hours of research, and hundreds of sketches and iterations. And with an increasing number of branded businesses in the world, doing research to verify that your mark is unique is a tedious yet necessary part of the process.</p>
-                  
-                  <p>With each logo project that we complete, we provide 3 - 5 unique logo concepts, a branding guide that details how to properly use the logo, several versions of the logo that are print-ready, and can be sent to any printer or publisher for easy use, detailed color schemes, typography & associated fonts, and design samples of your new logo.</p>
-                  
-                  <p>Click here to learn more about how we approach our logo projects, and why we believe that we are the top logo & branding agency in the area.</p>
+                  <p>Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами. Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.</p>
                 </div>
               </li>
               <li>
-                <h3>What separates Right Creative from other top design agencies in the area?</h3>
+                <h3>Как будет проводится марафон?</h3>
                 <div class="answer">
-                  <p>Experience, quality, and results.</p>
-                  <p><strong>Experience.</strong> We have been designing websites professional since the early days of the web - before CSS was mainstream, and people still used tables for their website layouts. In the 20+ years that we have been doing this, we have work with and learned from many of the top voices in several industries. To put it simply - there are very few people in the world, let alone the area that can top our years of experience.</p>
-                  
-                  <p><strong>Quality</strong> At Right Creative, we hold an almost unrealistic standard for quality. We demand excellence in every project we take on, and firmly believe that the quality of our work demonstrates our commitment to these standards.</p>
-                  
-                  <p><strong>Results</strong> More than anything else, our focus is, and will always be getting results for clients. We don't care how pretty something is - if it is not resulting in the growth or obtaining of goals for our clients, then it is not time or money well spent. Our mission is to turn visitors into paying customers - and every decision that we make is rooted in that mission.</p>
-                  
-                  <p><strong>Other distinguishing features</strong> Some of the other things that separate Right Creative from other top-rated agencies are: we hand-code all of our websites for maximum results. We don't rely on Wordpress, plugins, templates or themes to accomplish things, and are therefore not locked in to the limits they pose.</p>
+                  <p>Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.  Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами. Работая в бьюти-сфере 13 лет, в последние 5 стали активно следить за открывающимися коворкингами.</p>
                 </div>
               </li>
             </ul>
           </div>
          </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__copyright">
+            <p>
+              © 2022 Все права защищены.
+            </p>
+        </div>
+        <div class="footer__requisites">
+          <p>
+            ИП ХХХХХХХ С.С.
+          </p>
+          <p>
+            ИНН 777777777770
+          </p>
+        </div>
+      </footer>
     </div>
   </div>
   <script src="js/main.min.js"></script>

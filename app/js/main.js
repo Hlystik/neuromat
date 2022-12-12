@@ -1,10 +1,4 @@
 $(function () {
-   /*  $('.acc__head').on('click', function () {
-        console.log = (this);
-        $(this).toggleClass('acc__head_active').next().slideToggle();
-        $('.acc__head').not(this).removeClass('acc__head_active').next().slideUp();
-      });
-      $('#acc .acc__head:first').click(); */
       $('.accordion-list > li > .answer').hide();
     
   $('.accordion-list > li').click(function() {
@@ -17,7 +11,9 @@ $(function () {
     }
     return false;
   });
-  
-
-
-})
+  $('.menu__hamburger').on('click', function () {
+    $('.menu__hamburger').toggleClass('menu__hamburger--active');
+    $('.menu__list').toggleClass('menu__list--active');
+    //$('.subheader__img').toggleClass('subheader__img--active');
+  });
+});

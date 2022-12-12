@@ -50,6 +50,7 @@
     line-height: 29px;
     padding-left: 60px;
     position: relative;
+    color: #311D0D;
     &::before {
       content: '';
       position: absolute;
@@ -94,5 +95,8 @@
       margin-right: -200px;
     }
   }
+}
+.display-none {
+  display: none;
 }
 

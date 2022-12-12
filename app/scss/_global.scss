@@ -27,10 +27,19 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 140px;
-  border: 2px solid black;
   &_requests {
     padding: 0 100px;
   }
+}
+@media (max-width: 1439px) {
+	.container {
+		padding: 0 60px;
+	}
+}
+@media (max-width:743px) {
+	.container {
+		padding: 0 15px;
+	}
 }
 
 

@@ -29,3 +29,39 @@
     //text-align: center;
   }
 }
+@media (max-width:1279px) {
+  .title {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width:990px) {
+  .title {
+    &_product-item {
+      font-size: 42px;
+      line-height: 115.66%;
+    }
+    &_lessons {
+      font-size: 24px;
+      line-height: 26px;
+      margin-top: 40px;
+    }
+    &_card {
+      font-size: 30px;
+      line-height: 33px;
+      letter-spacing: 0;
+    }
+  }
+}
+@media (max-width:743px) {
+  .title {
+    &_product-item {
+      display: none;
+    }
+    &_lessons {
+      margin-top: 60px;
+      letter-spacing: 2px;
+    }
+  }
+}

@@ -24,3 +24,27 @@
     line-height: 23px;
   }
 }
+@media (max-width: 990px) {
+  .button {
+    font-size: 18px;
+    &_subheader {
+      font-size: 13px;
+      padding: 10px 24px;
+    }
+    &_card {
+      font-size: 21px;
+      height: 43px;
+      line-height: 8px;
+    }
+  }
+}
+@media (max-width: 743px) {
+  .button {
+    &_subheader {
+      margin-top: 38px;
+    }
+    &_product {
+      margin-top: 20px;
+    }
+  }
+}
