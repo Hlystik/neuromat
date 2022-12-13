@@ -25,6 +25,11 @@
       justify-content: space-between;
     }
   }
+  .product {
+    &__img_consultation {
+      margin-right: -120px; 
+    }
+  }
 }
 @media (max-width:1279px) {
   .logo {
@@ -112,6 +117,9 @@
       margin-right: -280px;
       margin-left: 20px;
     }
+    &__img_consultation {
+      max-width: 550px;
+    }
   }
   .lessons {
     &__item {
@@ -121,6 +129,14 @@
   .tariffs {
     &__wrapper {
       margin-left: 0;
+    }
+  }
+  .requests {
+    &__wrapper {
+      padding-left: 0;
+    }
+    &__list:last-child {
+      max-width: 460px;
     }
   }
 }
@@ -135,6 +151,17 @@
     transition: all .5s;
     padding: 28px 0;
     z-index: 10;
+    &_color {
+      background-color: #8e7561c2;
+      .menu__hamburger {
+        span {
+          background-color: #FFF;
+        }
+      }
+      .logo {
+        display: none;
+      }
+    }
     ul {
       padding: 20px 40px 25px;
     }
@@ -302,6 +329,12 @@
       margin-left: auto;
       margin-right: -317px;
     }
+    &__img_consultation {
+      max-width: 423px;
+      margin-right: -114px;
+      margin-bottom: 70px;
+      margin-left: -58px;
+    }
     &__item {
       max-width: 358px;
     }
@@ -325,6 +358,10 @@
       font-size: 22px;
       line-height: 31px;
       margin-right: 20px;
+    }
+    &__tarif_consultation {
+      width: 378px;
+      margin-top: 32px;
     }
   } 
   .lessons {
@@ -363,6 +400,14 @@
     padding: 34px 18px;
     width: 300px;
     min-height: 467px;
+    &_tarrifs {
+      margin: 0;
+      margin-top: 20px;
+      padding: 34px 14px;
+    }
+    &_tarrifs:last-child {
+      margin: 20px auto 0 auto;
+    }
     &__info {
       padding: 0 17px;
     }
@@ -390,6 +435,42 @@
         height: 20px;
       }
     }
+  }
+  .requests {
+    &__wrapper {
+      padding-left: 26px;
+    }
+    &__list {
+      margin-top: 30px;
+    }
+    &__list:last-child {
+      max-width: 284px;
+    }
+    &__list-item {
+      font-size: 17px;
+      line-height: 135.19%;
+      padding-left: 25px;
+      letter-spacing: 0;
+      margin-left: 15px;
+      margin-bottom: 12px;
+      &::before {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+  .services {
+    padding: 65px 0 40px;
+  }
+  .questions {
+    &__subtitle {
+      font-size: 23px;
+      line-height: 29px;
+      margin-left: 235px;
+    }
+  }
+  ul.accordion-list {
+    margin-top: 45px;
   }
 }
 @media (max-width: 743px) {
@@ -555,6 +636,15 @@
       margin-right: -100px;
       order: -1;
     }
+    &__img_consultation {
+      order: -1;
+      max-width: 366px;
+      margin: 0;
+      margin-right: -55px;
+      margin-left: auto;
+      margin-bottom: -20px;
+      margin-top: -20px;
+    }
     &__tarif {
       display: block;
       margin-top: 36px;
@@ -596,6 +686,57 @@
     .card+
     .card {
       margin-top: 20px;
+    }
+  }
+  .card {
+    &_tarrifs {
+      margin-top: 25px;
+    }
+  }
+  .requests {
+    &__wrapper {
+      display: block;
+      padding-right: 25px;
+      margin-top: 30px;
+    }
+    &__list {
+      margin: 0 auto;
+      max-width: 360px;
+    }
+    &__list:last-child {
+      max-width: 360px;
+    }
+    &__list-item {
+      margin-right: 15px;
+      &::before {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+  .services {
+    padding: 45px 0 30px;
+    &__tarrifs {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15px;
+    }
+  }
+  .questions {
+    padding: 30px 0 50px;
+    &__subtitle {
+      font-size: 17px;
+      line-height: 135.19%;
+      margin-left: 135px;
+      letter-spacing: 0;
+      margin-top: 0;
+    }
+  }
+  ul.accordion-list {
+    margin-top: 35px;
+    li {
+      padding: 15px 25px 15px 25px;
+      margin-bottom: 25px;
     }
   }
 }

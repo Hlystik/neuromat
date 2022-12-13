@@ -52,6 +52,11 @@
       line-height: 33px;
       letter-spacing: 0;
     }
+    &_requests {
+      font-size: 24px;
+      line-height: 26px;
+      margin-top: 55px;
+    }
   }
 }
 @media (max-width:743px) {
@@ -62,6 +67,9 @@
     &_lessons {
       margin-top: 60px;
       letter-spacing: 2px;
+    }
+    &_requests {
+      margin-top: 35px;
     }
   }
 }

@@ -4,13 +4,14 @@ ul.accordion-list {
   width: 100%;
   height: auto;
   margin-top: 70px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   li {
     position: relative;
     display: block;
     width: 100%;
     height: auto;
     background: url(../images/acc.jpg) center center/contain;
-    padding: 20px 60px;
+    padding: 30px 60px 30px 70px;
     border-radius: 20px;
     margin: 0 auto 40px auto;
     border: 2px solid #8E7561;
@@ -19,14 +20,15 @@ ul.accordion-list {
         background: none;
       h3 {
         color: #000000;
-        &:after {
-          transform: translateY(-50%) rotate(45deg);
-          background: url(../images/croos_2.svg) center center/contain no-repeat;
+        .icon-cross::before {
+          transform: translateY(-50%) rotate(90deg);
+          color: #8E7561;
         }
       }
     }
     h3 {
       font-weight: 500;
+      padding-right: 40px;
       position: relative;
       display: block;
       width: 100%;
@@ -39,12 +41,10 @@ ul.accordion-list {
       color: #FFFFFF;
       &:after {
         content: "";
-        background: url(../images/cross.svg) center center/contain no-repeat;
         position: absolute;
-        width: 28px;
-        height: 28px;
         right: 0;
         top: 50%;
+        font-size: 28px;
         transform: translateY(-50%);
         transition: all 0.3s;
       }

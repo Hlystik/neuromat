@@ -16,4 +16,25 @@ $(function () {
     $('.menu__list').toggleClass('menu__list--active');
     //$('.subheader__img').toggleClass('subheader__img--active');
   });
+  if ($(window).width() <= '990') {
+    //dark headera
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() >= 1) {
+        $('.menu').addClass("menu_color");
+      }
+    });
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() < 1) {
+        $('.menu').removeClass("menu_color");
+      }
+    });
+  }
+  $("a[href*='#']").on("click", function (e) {
+    const anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $(anchor.attr('href')).offset().top-58
+    }, 777);
+    e.preventDefault();
+    return false;
+  });
 });
