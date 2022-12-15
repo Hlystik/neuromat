@@ -1,5 +1,36 @@
 .lessons {
 padding: 80px 0 30px;
+  &__shadow-one,
+  &__shadow-two,
+  &__shadow-three {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  &__shadow-one {
+    width: 722.88px;
+    height: 751.11px;
+    background: rgba(171, 152, 138, 0.74);
+    filter: blur(270.135px);
+    top: -130px;
+    left: 0;
+  }
+  &__shadow-two {
+    width: 673.39px;
+    height: 1112.5px;
+    background: rgba(128, 101, 82, 0.41);
+    filter: blur(228.5px);
+    right: -300px;
+  }
+
+  &__shadow-three {
+    width: 584.45px;
+    height: 609.13px;
+    background: #A68F7D;
+    filter: blur(228.5px);
+    bottom: -100px;
+    left: -100px;
+  }
   &__wrapper {
     display: flex;
   }

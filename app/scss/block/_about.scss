@@ -1,5 +1,16 @@
 .about {
   padding-bottom: 220px;
+  &__shadow {
+    position: absolute;
+    width: 584.45px;
+    height: 609.13px;
+    background: rgba(166, 143, 125, 0.85);
+    filter: blur(245.5px);
+    border-radius: 100%;
+    top: 100px;
+    left: -155px;
+    z-index: -1;
+  }
   &__img {
     margin-left: -200px;
     margin-top: 55px;

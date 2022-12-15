@@ -38,3 +38,20 @@ $(function () {
     return false;
   });
 });
+
+
+
+function getBrowserId () {
+  let browsers = ["Opera", "Chrome", "Safari", "Firefox", "MSIE"];
+  let userAgent = navigator.userAgent;
+  let idBrowser = 0;
+
+  for (idBrowser; idBrowser < browsers.length && userAgent.indexOf(browsers[idBrowser]) === -1; idBrowser++);
+  return idBrowser;
+}
+let div = document.querySelectorAll('.dark');
+for(let i = 0; i < div.length; i++) {
+  if (getBrowserId() == 2) {
+    div[i].classList.add("none");
+  }
+}

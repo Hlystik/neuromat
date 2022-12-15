@@ -24,6 +24,7 @@ body {
 	flex: 0 0 auto;
 }
 .container{
+	position: relative;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 140px;
@@ -40,6 +41,9 @@ body {
 	.container {
 		padding: 0 15px;
 	}
+}
+.none {
+	display: none;
 }
 
 

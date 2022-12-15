@@ -1,9 +1,21 @@
 .requests {
-
+  &__shadow {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    width: 1848px;
+    height: 751.11px;
+    background: rgba(171, 152, 138, 0.4);
+    filter: blur(270.135px);
+    transform: rotate(-28.62deg);
+    left: -300px;
+    top: 250px;
+  }
   &__wrapper {
     display: flex;
     padding-left: 50px;
     justify-content: space-between;
+    
   }
 
   &__list {

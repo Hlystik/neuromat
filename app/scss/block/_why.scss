@@ -1,5 +1,16 @@
 .why {
-
+  &__shadow {
+    background: rgba(166, 143, 125, 0.81);
+    filter: blur(246px);
+    width: 926px;
+    height: 609.13px;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    border-radius: 50%;
+  }
   &__wrapper {
     display: flex;
     flex-wrap: wrap;

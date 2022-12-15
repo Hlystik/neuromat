@@ -1,5 +1,36 @@
 .product {
-
+  &__shadow-one {
+    position: absolute;
+    width: 928px;
+    height: 884.9px;
+    background: rgba(147, 129, 115, 0.61);
+    filter: blur(236px);
+    left: -450px;
+    border-radius:50%;
+    z-index: -1;
+  }
+  &__shadow-two {
+    position: absolute;
+    width: 707.95px;
+    height: 672.35px;
+    background: #8E7561;
+    filter: blur(279px);
+    right: 0;
+    top: 200px;
+    z-index: -1;
+    border-radius:50%;
+  }
+  &__shadow-three {
+    position: absolute;
+    z-index: -1;
+    width: 1848px;
+    height: 751.11px;
+    border-radius:50%;
+    background: rgba(171, 152, 138, 0.4);
+    filter: blur(270.135px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
   &__top {
     position: relative;
     padding: 170px 0 183px;
